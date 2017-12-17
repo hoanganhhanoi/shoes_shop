@@ -14,6 +14,47 @@ module.exports = {
     },
     description: {
       type:"string"
+    },
+    quantity: {
+      type: "integer",
+      require: true
+    },
+    price: {
+      type: "integer",
+      require: true
+    },
+    favorite: {
+      type: "integer",
+      require: true
+    },
+    // Add a reference to Image
+    images: {
+      collection: "image",
+      via: "product"
+    },
+    // Add a reference to order_detail
+    order_detail: {
+      collection: "order_detail",
+      via: "product"
+    }
+    // Add a reference to brand
+    brand: {
+      model: "brand"
+    },
+    category: {
+      model: "category"
+    }
+    // Add a reference a size
+    sizes: {
+      collection: "size",
+      via: "products",
+      dominant: true
+    },
+    // Add a reference a color
+    colors: {
+      collection: "color",
+      via: "products",
+      dominant: true
     }
   }
 };
