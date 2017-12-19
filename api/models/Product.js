@@ -30,7 +30,7 @@ module.exports = {
     // Add a reference to Image
     images: {
       collection: "image",
-      via: "product"
+      via: "product_id"
     },
     // Add a reference to order_detail
     order_detail: {
@@ -43,18 +43,20 @@ module.exports = {
     },
     category: {
       model: "category"
-    }
+    },
+    // Add a reference a sale
+    sale: {
+      model: "sale"
+    },
     // Add a reference a size
     sizes: {
       collection: "size",
-      via: "products",
-      dominant: true
+      through: "product_size"
     },
     // Add a reference a color
     colors: {
       collection: "color",
-      via: "products",
-      dominant: true
+      through: "product_color"
     }
   }
 };

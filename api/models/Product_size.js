@@ -1,5 +1,5 @@
 /**
- * Sale.js
+ * Productsize.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
@@ -8,13 +8,11 @@
 module.exports = {
 
   attributes: {
-    percent: {
-      type: "integer",
-      require: true
+    product: {
+      model: "product"
     },
-    products: {
-      collection: "product",
-      via: "sale"
+    size: {
+      model: "size"
     }
   }
 };
