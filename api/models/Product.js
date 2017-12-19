@@ -30,13 +30,13 @@ module.exports = {
     // Add a reference to Image
     images: {
       collection: "image",
-      via: "product_id"
+      via: "product"
     },
     // Add a reference to order_detail
     order_detail: {
       collection: "order_detail",
       via: "product"
-    }
+    },
     // Add a reference to brand
     brand: {
       model: "brand"
