@@ -17,15 +17,15 @@ module.exports = {
     },
     quantity: {
       type: "integer",
-      require: true
+      required: true
     },
     price: {
       type: "integer",
-      require: true
+      required: true
     },
     favorite: {
       type: "integer",
-      require: true
+      required: true
     },
     // Add a reference to Image
     images: {

@@ -16,7 +16,7 @@ module.exports = {
     },
     quantity: {
       type: "integer",
-      require: true
+      required: true
     }
   }
 };

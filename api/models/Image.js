@@ -10,7 +10,7 @@ module.exports = {
   attributes: {
     image: {
       type: "string",
-      require: true
+      required: true
     },
     // Add a reference to Product
     product: {

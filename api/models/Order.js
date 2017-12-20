@@ -10,15 +10,15 @@ module.exports = {
   attributes: {
     date: {
       type: "datetime",
-      require: true
+      required: true
     },
     quantity: {
       type: "integer",
-      require: true
+      required: true
     },
     total: {
       type: "integer",
-      require: true
+      required: true
     },
     status: {
       model: 'status'

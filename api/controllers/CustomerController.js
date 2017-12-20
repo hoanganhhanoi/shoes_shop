@@ -7,12 +7,12 @@
 
 module.exports = {
 	create: function(req, res, next) {
-		CustomerService.createCustomer(req.parrams.all(), function(error, data) {
+		CustomerService.createCustomer(req.body, function(error, data) {
 			if(error) {
 				sails.log(error);
-				return res.serverError(error);
+				return res.serverError(data);
 			}
-			res.ok();
+			res.created(data);
 		});
 	}
 };

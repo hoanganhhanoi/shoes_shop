@@ -8,27 +8,28 @@
 module.exports = {
 
   attributes: {
-    customer_name: {
+    name: {
       type: "string",
-      require: true,
+      required: true,
       unique: true
     },
     email: {
       type: "string",
+      required: true,
       email: true,
       unique: true
     },
     password: {
       type: "string",
-      require: true
+      required: true
     },
     address: {
       type: "string",
-      require: true
+      required: true
     },
     phone: {
       type: "string",
-      require: true
+      required: true
     },
     orders: {
       collection: "order",

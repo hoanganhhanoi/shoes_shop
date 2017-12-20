@@ -10,7 +10,7 @@ module.exports = {
   attributes: {
     percent: {
       type: "integer",
-      require: true
+      required: true
     },
     products: {
       collection: "product",
