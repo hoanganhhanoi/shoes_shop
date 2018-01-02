@@ -6,7 +6,8 @@
  */
 
 module.exports = {
-	create: function(req, res, next) {
+	createCustomer: function(req, res, next) {
+		debugger;
 		CustomerService.createCustomer(req.body, function(error, data) {
 			if(error) {
 				sails.log(error);
@@ -14,5 +15,14 @@ module.exports = {
 			}
 			res.created(data);
 		});
+	},
+	getCustomers: function(req, res, next) {
+
+	},
+	editCustomer: function(req, res, next) {
+
+	},
+	deleteCustomer: function(req, res, next) {
+
 	}
 };

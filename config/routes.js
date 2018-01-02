@@ -45,5 +45,11 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-  'post /customers': 'CustomerController.create'
+  /**
+   * router api customer
+   */
+  'post /api/v1/customers': 'CustomerController.createCustomer',
+  'get /api/v1/customers': 'CustomerController.getCustomers',
+  'put /api/v1/customers': 'CustomerController.editCustomer',
+  'delete /api/v1/customers/:id': 'CustomerController.deleteCustomer'
 };
