@@ -1,3 +1,9 @@
+/**
+ * CustomerService
+ *
+ * @description :: Server-side services for managing customers
+ * @help        :: See http://sailsjs.org/#!/documentation/concepts/Services
+ */
 module.exports = {
   createCustomer: function(customer, done) {
     Customer.create(customer).exec(function(error, data) {
