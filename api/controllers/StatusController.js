@@ -6,16 +6,19 @@
  */
 
 module.exports = {
-	get: function(req, res, next) {
+	getStatus: function(req, res, next) {
 
 	},
-	create: function(req, res, next) {
+	getStatus: function(req, res, next) {
 
 	},
-	edit: function(req, res, next) {
+	createStatus: function(req, res, next) {
 
 	},
-	delete: function(req, res, next) {
+	editStatus: function(req, res, next) {
+
+	},
+	deleteStatus: function(req, res, next) {
 
 	}
 };

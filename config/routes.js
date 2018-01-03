@@ -38,18 +38,74 @@ module.exports.routes = {
 
   /***************************************************************************
   *                                                                          *
-  * Custom routes here...                                                    *
-  *                                                                          *
-  * If a request to a URL doesn't match any of the custom routes above, it   *
-  * is matched against Sails route blueprints. See `config/blueprints.js`    *
-  * for configuration options and examples.                                  *
+  * routes api customers                                                     *
   *                                                                          *
   ***************************************************************************/
-  /**
-   * router api customer
-   */
-  'post /api/v1/customers': 'CustomerController.createCustomer',
+
   'get /api/v1/customers': 'CustomerController.getCustomers',
+  'post /api/v1/customers': 'CustomerController.createCustomer',
   'put /api/v1/customers': 'CustomerController.editCustomer',
-  'delete /api/v1/customers/:id': 'CustomerController.deleteCustomer'
+  'delete /api/v1/customers/:customer_id': 'CustomerController.deleteCustomer',
+  'get /api/v1/customers/:customer_id': 'CustomerController.getCustomer',
+
+  /***************************************************************************
+  *                                                                          *
+  * routes api brands                                                        *
+  *                                                                          *
+  ***************************************************************************/
+
+  'get /api/v1/brands': 'BrandController.getBrands',
+  'post /api/v1/brands': 'BrandController.createBrand',
+  'put /api/v1/brands': 'BrandController.editBrand',
+  'delete /api/v1/brands/:brand_id': 'BrandController.deleteBrand',
+  'get /api/v1/brands/:brand_id': 'BrandController.getBrand'
+
+  /***************************************************************************
+  *                                                                          *
+  * routes api colors                                                        *
+  *                                                                          *
+  ***************************************************************************/
+
+  'get /api/v1/colors': 'ColorController.getColors',
+  'post /api/v1/colors': 'ColorController.createColor',
+  'put /api/v1/colors': 'ColorController.editColor',
+  'delete /api/v1/colors/:color_id': 'ColorController.deleteColor',
+  'get /api/v1/colors/:color_id': 'ColorController.getColor'
+
+  /***************************************************************************
+  *                                                                          *
+  * routes api sizes                                                         *
+  *                                                                          *
+  ***************************************************************************/
+
+  'get /api/v1/sizes': 'SizeController.getSizes',
+  'post /api/v1/sizes': 'SizeController.createSize',
+  'put /api/v1/sizes': 'SizeController.editSize',
+  'delete /api/v1/sizes/:size_id': 'SizeController.deleteSize',
+  'get /api/v1/sizes/:size_id': 'SizeController.getSize'
+
+  /***************************************************************************
+  *                                                                          *
+  * routes api sales                                                         *
+  *                                                                          *
+  ***************************************************************************/
+
+  'get /api/v1/sales': 'SaleController.getSales',
+  'post /api/v1/sales': 'SaleController.createSale',
+  'put /api/v1/sales': 'SaleController.editSale',
+  'delete /api/v1/sales/:sale_id': 'SaleController.deleteSale',
+  'get /api/v1/sales/:sale_id': 'SaleController.getSale'
+
+  /***************************************************************************
+  *                                                                          *
+  * routes api categories                                                    *
+  *                                                                          *
+  ***************************************************************************/
+
+  'get /api/v1/categories': 'CategoryController.getCategories',
+  'post /api/v1/categories': 'CategoryController.createCategory',
+  'put /api/v1/categories': 'CategoryController.editCategory',
+  'delete /api/v1/categories/:cate_id': 'CategoryController.deleteCategory',
+  'get /api/v1/categories/:cate_id': 'CategoryController.getCategory'
+
 };

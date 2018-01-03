@@ -6,16 +6,19 @@
  */
 
 module.exports = {
-	get: function(req, res, next) {
+	getSizes: function(req, res, next) {
 
 	},
-	create: function(req, res, next) {
+	getSize: function(req, res, next) {
 
 	},
-	edit: function(req, res, next) {
+	createSize: function(req, res, next) {
 
 	},
-	delete: function(req, res, next) {
+	editSize: function(req, res, next) {
+
+	},
+	deleteSize: function(req, res, next) {
 
 	}
 };

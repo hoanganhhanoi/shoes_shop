@@ -6,16 +6,19 @@
  */
 
 module.exports = {
-	get: function(req, res, next) {
+	getImages: function(req, res, next) {
 
 	},
-	create: function(req, res, next) {
+	getImage: function(req, res, next) {
 
 	},
-	edit: function(req, res, next) {
+	createImage: function(req, res, next) {
 
 	},
-	delete: function(req, res, next) {
+	editImage: function(req, res, next) {
+
+	},
+	deleteImage: function(req, res, next) {
 
 	}
 };

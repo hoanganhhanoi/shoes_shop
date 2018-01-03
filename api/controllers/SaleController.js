@@ -6,7 +6,10 @@
  */
 
 module.exports = {
-	get: function(req, res, next) {
+	getSales: function(req, res, next) {
+
+	},
+	getSale: function(req, res, next) {
 
 	},
 	create: function(req, res, next) {

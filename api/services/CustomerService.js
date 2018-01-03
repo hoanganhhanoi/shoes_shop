@@ -5,6 +5,25 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Services
  */
 module.exports = {
+  getCustomer: function(customer_id, done) {
+    Customer.find()
+    .where({id: customer_id})
+    .then(function(customer) {
+      return done(false, customer);
+    })
+    .catch(function(error) {
+      return done(true, error);
+    });
+  },
+  getCustomers: function(done) {
+    Customer.find()
+    .then(function(customers) {
+      return done(false, customers);
+    })
+    .catch(function(error) {
+      return done(true, error);
+    });
+  },
   createCustomer: function(customer, done) {
     Customer.create(customer).exec(function(error, data) {
       if(error) {

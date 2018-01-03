@@ -6,16 +6,19 @@
  */
 
 module.exports = {
-	get: function(req, res, next) {
+	getBrands: function(req, res, next) {
 
 	},
-	create: function(req, res, next) {
+	getBrand: function(req, res, next) {
 
 	},
-	edit: function(req, res, next) {
+	createBrand: function(req, res, next) {
 
 	},
-	delete: function(req, res, next) {
+	editBrand: function(req, res, next) {
+
+	},
+	deleteBrand: function(req, res, next) {
 
 	}
 };

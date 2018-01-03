@@ -6,16 +6,19 @@
  */
 
 module.exports = {
-	get: function(req, res, next) {
+	getCategories: function(req, res, next) {
 
 	},
-	create: function(req, res, next) {
+	getCategory: function(req, res, next) {
 
 	},
-	edit: function(req, res, next) {
+	createCategory: function(req, res, next) {
 
 	},
-	delete: function(req, res, next) {
+	editCategory: function(req, res, next) {
+
+	},
+	deleteCategory: function(req, res, next) {
 
 	}
 };

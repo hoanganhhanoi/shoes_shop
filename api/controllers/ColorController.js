@@ -6,7 +6,10 @@
  */
 
 module.exports = {
-	get: function(req, res, next) {
+	getColors: function(req, res, next) {
+
+	},
+	getColor: function(req, res, next) {
 
 	},
 	create: function(req, res, next) {
